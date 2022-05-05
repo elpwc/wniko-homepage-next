@@ -7,5 +7,3 @@ generateService({
     mock: false,
     serversPath: './services/',
 })
-
-export {};

@@ -14,8 +14,6 @@ const MenuItem = (props: { children: JSX.Element | string; href: string; checked
 const Menu = () => {
 	const router = useRouter();
 
-	console.log(router.route.split("/")?.[1]);
-
 	return (
 		<nav className={styles.nav}>
 			<MenuItem href="/" checked={router.route.split("/")?.[1] === ""}>
