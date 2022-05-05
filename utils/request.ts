@@ -1,16 +1,16 @@
 import axios, { AxiosRequestHeaders, Method } from "axios";
 import cookie from "react-cookies";
-import appconfig from "../appconfig";
+const appconfig = require ("../appconfig");
 
 // 更新services里的接口的方法：npm run openapi
 
 axios.defaults.withCredentials = false;
 
 const service = axios.create({
-  baseURL: appconfig.apiBaseURL,
+  baseURL: appconfig.apiBaseURL + '/api/v1',
   timeout: 5000,
   responseType: "json",
-  withCredentials: true,
+  //withCredentials: true,
   headers: {
     "Content-Type": "application/json;charset=utf-8",
   },

@@ -1,12 +1,21 @@
-import type { NextPage } from 'next'
-import Layout from '../../components/Layout'
+import type { NextPage } from "next";
+import { useEffect, useState } from "react";
+import Layout from "../../components/Layout";
+import { ProjectsControllerFindAll } from "../../services/api/Projects";
 
 const Project: NextPage = () => {
-  return (
-    <Layout>
-      projects
-    </Layout>
-  )
-}
+	const [projects, setprojects]: [API.CreateProjectDto[], any] = useState([]);
+	const refreshProjects = () => {
+		ProjectsControllerFindAll({}).then((res) => {
+			console.log(res);
+		});
+	};
 
-export default Project
+  useEffect(() => {
+    refreshProjects();
+  }, [])
+
+	return <Layout>projects</Layout>;
+};
+
+export default Project;
