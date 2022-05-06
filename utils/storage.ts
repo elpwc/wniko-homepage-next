@@ -1,5 +1,5 @@
 // Provides a way to share data globally.
-export default class Storage<T> {
+export default class DataStorage<T> {
   constructor(defaultValue: T, functions?: {}) {
     this.value = defaultValue;
     if (functions) {

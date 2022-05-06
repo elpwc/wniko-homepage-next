@@ -1,0 +1,58 @@
+.container {
+}
+
+.modalBackground {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalBox {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-width: 50%;
+	min-height: 50%;
+	padding: 10px;
+	background-color: white;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.header button {
+	padding: 0.2rem;
+	border: none;
+	border-radius: 100px;
+	box-shadow: none;
+}
+
+@media (any-hover: hover) {
+	.header button:hover {
+		color: white;
+		background-color: rgb(255, 96, 96);
+	}
+}
+
+.main {
+	margin-bottom: auto;
+}
+
+.footer {
+	display: flex;
+	gap: 20px;
+	justify-content: flex-end;
+}
+
+.title {
+	font-weight: bold;
+	font-size: large;
+}

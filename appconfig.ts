@@ -7,3 +7,5 @@ module.exports = {
 	/** API Base URL */
 	apiBaseURL: inDebug ? "http://localhost:8001" : "/",
 };
+
+export {};
