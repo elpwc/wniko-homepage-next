@@ -8,4 +8,3 @@ generateService({
     serversPath: './services/',
 })
 
-export {};
