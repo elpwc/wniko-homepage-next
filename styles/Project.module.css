@@ -18,8 +18,59 @@
 	width: 100%;
 }
 
-.projectForm{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.projectForm {
+	display: flex;
+	flex-direction: row;
+	gap: 5px;
+	justify-content: space-between;
+}
+
+.formItems {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.formItems > label {
+	width: 45%;
+}
+
+.projectFormComponent {
+	width: 100%;
+}
+
+.projectFormComponent * {
+	width: 100%;
+}
+
+.formItems > label > span {
+	width: 100%;
+}
+
+.modalShowModeheader {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+}
+
+.modalShowModetitle {
+	margin-right: auto;
+	font-weight: 500;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.modalShowModetechList {
+	display: flex;
+}
+
+.modalShowModetechList span {
+	color: gray;
+	text-decoration-line: underline;
+}
+
+.modalShowModemain {
+	display: flex;
+	justify-content: space-between;
 }

@@ -1,4 +1,5 @@
 const { generateService } = require('@umijs/openapi')
+//const { generateService } = require('wnikoopenapi2typescript')
 const appconfig = require ('./appconfig');
 
 generateService({

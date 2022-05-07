@@ -1,32 +1,64 @@
 .projectListItem {
-    width: 45%;
-    padding: 10px;
-    background-color: white;
-    box-shadow: 0 0 5px 0 lightgray;
+	width: 100%;
+	padding: 10px;
+	background-color: white;
+	box-shadow: 0 0 5px 0 lightgray;
+	transition: all 0.2s;
 }
 
-.statusBadge{
-    font-size: small;
-    padding: 3px;
-    background-color: white;
-    border-radius: 5px;
-    min-width: max-content;
-    height: fit-content;
-    color: white;
-    width: fit-content;
+@media (any-hover: hover) {
+	.projectListItem:hover {
+		box-shadow: 0 0 5px 0 rgb(162, 162, 162);
+	}
+
+	.title:hover {
+		text-decoration-line: underline;
+	}
 }
 
-.title{
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
+.statusBadge {
+	width: fit-content;
+	min-width: max-content;
+	height: fit-content;
+	padding: 3px;
+	color: white;
+	font-size: small;
+	background-color: white;
+	border-radius: 5px;
 }
 
-.techList{
-    display: flex;
+.header {
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
 }
 
-.techList span{
-    color: gray;
-    text-decoration-line: underline;
+.title {
+	margin-right: auto;
+	font-weight: 500;
+	font-size: larger;
+	cursor: pointer;
+}
+
+.techList {
+	display: flex;
+}
+
+.techList span {
+	color: gray;
+	text-decoration-line: underline;
+}
+
+.editButton {
+	padding: 0;
+	color: rgb(49, 141, 187);
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	text-decoration-line: underline;
+}
+
+.main {
+	display: flex;
+	justify-content: space-between;
 }
